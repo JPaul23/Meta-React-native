@@ -1,22 +1,21 @@
-import { Text, View } from 'react-native';
-import React from 'react';
+import * as React from 'react';
+import { View, Text } from 'react-native';
 
-const LittleLemonFooter = () => {
+export default function LittleLemonFooter() {
     return (
-        <View style={{
-            backgroundColor: '#F4CE14',
-            marginBottom: 10
-        }}>
+        <View
+            style={{
+                backgroundColor: '#F4CE14',
+                marginBottom: 10,
+            }}>
             <Text
                 style={{
-                    fontSize: 19,
+                    fontSize: 18,
                     color: 'black',
-                    textAlign: 'auto',
+                    textAlign: 'center',
                 }}>
-                All rights reserved by Little Lemon, 2022
+                All rights reserved by Little Lemon, 2022{' '}
             </Text>
         </View>
-    )
+    );
 }
-
-export default LittleLemonFooter;
